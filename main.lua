@@ -1,4 +1,4 @@
- --predebug = true
+--predebug = true
  --always_enable_log = true
  -- test_fight = true
  -- fake_fight = true
@@ -80,7 +80,7 @@ load(after_require_hook or '')()
 consoleInit()--调用控制台
 showControlBar(true)--显示悬浮窗
 setEventCallback()--设置脚本关闭和悬浮窗触控事件
-hotUpdate()
+--hotUpdate()
 fetchSkillIcon()
 check_root_mode()
 enable_accessibility_service()--无障碍权限
@@ -133,7 +133,7 @@ if copy_homework then
         if res then simulator_id= JsonDecode(res)["data"]["id"] end
         log("模拟器id",simulator_id)
         if not simulator_id or #simulator_id ==0 then exit() end 
-  end
+end
   
 --debug_mode=true
 if debug_mode then

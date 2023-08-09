@@ -3140,7 +3140,7 @@ path.开始游戏 = function(x, disable_ptrs_check)
   -- log(findOne("报酬合成玉已满"))
   -- log(findOne("开始行动"))
   -- safeexit()
-  print(copy_homework)
+ 
   
   if not appear("代理指挥开", .5) then
     tap("代理指挥开1")
@@ -3217,6 +3217,8 @@ path.开始游戏 = function(x, disable_ptrs_check)
     no_success_one_loop = 0
   	if need_copy_homework then
       maa_copliot(x)
+      
+      
     else
     
     if fake_fight then
